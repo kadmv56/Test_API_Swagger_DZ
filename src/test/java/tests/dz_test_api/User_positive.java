@@ -15,7 +15,6 @@ import static io.restassured.RestAssured.given;
  */
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-
 public class User_positive extends BaseTest {
 
     String requestBody = null;

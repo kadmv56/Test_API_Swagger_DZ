@@ -13,7 +13,6 @@ import static io.restassured.RestAssured.given;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
-
 public class Store_positive_negative extends BaseTest {
     String requestBody = null;
     //Назаначаем поля
@@ -153,6 +152,7 @@ public class Store_positive_negative extends BaseTest {
                 .then()
                 .spec(getAssertRespDeleteOrder404Str());
     }
+
     @Test
     @Order(11)
     @DisplayName("Негатив. Return of pet stocks by status, without headers in the request")
